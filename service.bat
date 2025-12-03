@@ -47,7 +47,7 @@ echo 3. FixRoblox (%GameFilterStatus%)
 echo 4. Switch ipset (%IPsetStatus%)
 echo 5. Update ipset list
 
-set /p menu_choice=Enter choice (0-8): 
+set /p menu_choice=Enter choice (0-5): 
 
 if "%menu_choice%"=="1" goto service_install
 if "%menu_choice%"=="2" goto service_remove
@@ -750,3 +750,4 @@ exit /b
 :PrintYellow
 powershell -Command "Write-Host \"%~1\" -ForegroundColor Yellow"
 exit /b
+
